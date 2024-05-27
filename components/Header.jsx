@@ -3,7 +3,7 @@ import MenuNav from './MenuNav';
 import Image from 'next/image';
 import logo from '@/public/museum.webp';
 
-export default function Header() {
+export default function Header({setPage}) {
     return <header className={styles.header}>
        
         <div className={styles.title}>  
@@ -14,6 +14,6 @@ export default function Header() {
             />
             <h1>Art et Histoire</h1>
         </div>
-        <MenuNav/>
+        <MenuNav setPage={setPage} />
     </header>
 }
