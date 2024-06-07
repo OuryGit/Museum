@@ -5,7 +5,9 @@ export default function Accueil() {
     return (
         
         <div className={styles.welcome}>
-            Bienvenue à votre musée Art et Histoire
+            <h1 className={styles.bienvenue}>
+                Bienvenue à votre musée Art et Histoire
+            </h1>
         </div>
     );
 }

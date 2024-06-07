@@ -1,15 +1,74 @@
+/* css commun a tous les ecrnas ---------------------*/
+.btn{
+    border-radius:3rem ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(188, 222, 248);
+} 
+.nav a {
+    color: var(--dark);
+    font-size:  x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    &:hover{
+        border-radius: 1.5rem;
+        color: rgb(61, 64, 160);
+
+    }
+}
 .nav ul {
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 4rem;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: .5rem;
+} 
+@media screen and (min-width: 900px) {
+     .nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        list-style-type: none;
+        margin: 0;
+    } 
+ 
 }
-.nav a {
-    color: var(--dark);
-    font-weight: 650;
-    font-size: 20px;
+/* ------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width: 701px) and (max-width: 901px){
+    .nav ul{
+        display: flex;
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+}
+/* ------------------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 350px) and  (max-width: 700px){
+    .navList{
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        height: auto;
+        top: 90px;
+        right: 0;
+        background-color: rgb(50, 146, 146);
+    }
+    .navItem{
+    }
+    .visiter{
+
+    }
+    .navLink{
+        background-color: blueviolet;
+    }
+    
+  
+
 }

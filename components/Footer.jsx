@@ -20,7 +20,9 @@ export default function Footer() {
             <FaMapMarkerAlt />
           </a>
         </div>
-        <div>&copy; Collège La Cité 2024</div>
+        <div>&copy; Collège La Cité 2024</div><br />
+        <div>Développé par Youssef El Ghazzali/Mamadou Oury Bah/Amadou Doumbia</div>
+
       </div>
     </footer>
   );

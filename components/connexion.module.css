@@ -1,0 +1,78 @@
+.contactContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/museum-background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.contactContent {
+  background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour améliorer la lisibilité */
+  padding: 4rem;
+  border-radius: 0.5rem;
+  color: var(--light);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+.contactContent h1 {
+  margin-bottom: 1rem; 
+  color: hsl(var(--hue-color), 80%, 50%);
+}
+.contactContent p {
+  margin-bottom: 0.3rem; 
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.contactForm label {
+  margin: 1rem 0 1rem;
+  font-weight: bold
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 0.6rem;
+}
+
+.contactForm button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: hsl(var(--hue-color), 60%, 33%);
+  color: var(--light);
+  cursor: pointer;
+}
+
+.map {
+  margin: 2rem 0;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.socialMedia a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.socialMedia a:hover {
+  text-decoration: underline;
+}
