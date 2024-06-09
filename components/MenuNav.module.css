@@ -1,18 +1,19 @@
 /* css commun a tous les ecrnas ---------------------*/
 .btn{
+    padding: .2rem .1rem 0rem .5rem;
+    background-color: rgba(0, 0, 0, 0) ;
     border-radius:3rem ;
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: rgb(188, 222, 248);
+   
 } 
 .nav a {
-    color: var(--dark);
-    font-size:  x-large;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--dark);
     &:hover{
         border-radius: 1.5rem;
-        color: rgb(61, 64, 160);
+        color: rgb(224, 225, 240);
 
     }
 }
@@ -23,7 +24,7 @@
     gap: 4rem;
     list-style-type: none;
     margin: 0;
-    padding: .5rem;
+    padding: .5rem .2rem 0rem 1rem;
 } 
 @media screen and (min-width: 900px) {
      .nav ul {
@@ -55,18 +56,27 @@
         flex-direction: column;
         position: absolute;
         align-items: center;
-        height: auto;
-        top: 90px;
+        height: 300px;
+        top: 65px;
+        margin: .5rem;
+        padding: 2rem;
+        border-radius: 1rem;
         right: 0;
-        background-color: rgb(50, 146, 146);
+        background-color: rgba(0, 0, 0, 0.745) ;
     }
     .navItem{
+        margin: 1.5rem;
     }
     .visiter{
-
+        font-size: medium;
+        padding: .8rem 0.8rem;
+        text-align: center;
+        color: aliceblue;
+        width: 10px;
     }
     .navLink{
-        background-color: blueviolet;
+        font-size: medium;
+        color: white;
     }
     
   

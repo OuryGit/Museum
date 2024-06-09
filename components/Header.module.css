@@ -1,50 +1,48 @@
+.header {
+        display: flex;
+        align-items: center;
+        background-color: var(--couleur5);
+        background-color: var(--couleur5);
+        justify-content: space-between;
+        width: 100%;
+        z-index: 1000;
+       
+    }
+    .logoDiv{
+        margin: 0;
+    }
+    .logo {
+        color: hsl(var(--hue-color), 60%, 60%);
+        cursor: pointer;
+        position: relative;
+    }
+
 /* CSS qui s'applique aux écrans de plus de 900 pixels de largeur */
 @media screen and (min-width: 900px) {
     .header {
         padding: 1.5rem;
-        background-color: var(--couleur5);
-        background-color: var(--couleur5);
         display: flex;
         position: fixed;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
         box-shadow: 0.2px 4px white;
-        border: solid black;
         z-index: 1000;
+        font-size: medium;
+
+    }
+    .logo {
+        padding: 1.5rem;
     }
     #mobile{
         display: none;
        }
-    .logo {
-        color: rgb(61, 64, 160);
-        cursor: pointer;
-        padding: 1.5rem;
-        position: relative;
-    }
-    .logoDiv{
-        margin: .5rem;
-    }
-   
+  
+  
 
 }
 /* ------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 901px){
 
-    .header {
-        display: flex;
-        padding: 1.5rem;
-        align-items: center;
-        background-color: var(--couleur5);
-        background: rgb(26, 113, 179);
-        position: fixed;
-        justify-content: space-between;
-        width: 100%;
-        box-shadow: 0.2px 4px white;
-        border: solid black;
-        z-index: 1000;
-    }
+    
     
 }
 /* ------------------------------------------------------------------------------------------------------- */
@@ -55,27 +53,36 @@
         align-items: flex-start;
         justify-content: flex-start;
         position: absolute;
-         padding: 1.5rem;
-        background-color: var(--couleur5);
-        background: rgb(89, 155, 235);
+         padding: 1rem;
+        background: rgb(46, 115, 199);
         position: fixed;
         align-items: center;
         justify-content: space-around;
         width: 100%;
         box-shadow: 0.2px 4px white;
-        border: solid black;
         z-index: 1000;
     } 
     #mobile{
-        background-color: rebeccapurple;
-        flex-direction: column;
+        flex-direction: flex;
+        display: flex;
         align-items: center;
         position: absolute;
         align-items: flex-end;
         height: auto;
-        top: 90px;
+        top: 84px;
+        background-color: aqua;
         right: 0;
         background: transparent;
-        background-color: rgb(13, 56, 56);
-        padding: .5rem;    }
     }
+    .menuBar{
+        display: none;
+    }
+    #mobile .icon{
+        color: red;
+        width: 50px;
+        height: 30px;
+    }
+}
+
+
+    

@@ -16,7 +16,7 @@ export default function MenuNav({setPage}) {
                 <a className={styles.navLink} href="#"onClick={() => setPage('apropos')}>À propos</a>
             </li>
             <button className={`${styles.btn} ${styles.btn} `}>
-             <a className={styles.visiter} href="#"onClick={() => setPage('connexion')}>VISITER</a>
+                <a className={styles.visiter} href="#"onClick={() => setPage('connexion')}>VISITER</a>
             </button>
            
         </ul>
