@@ -1,0 +1,103 @@
+/* CSS qui s'applique aux écrans de plus de 900 pixels de largeur */
+@media screen and (min-width: 900px) {
+    .header {
+        padding: 0.5rem;
+        background-color: var(--couleur5);
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+
+        border: solid black;
+        z-index: 1000;
+    }
+    #mobile{
+        display: none;
+       }
+    .logo {
+        color: hsl(var(--hue-color), 60%, 60%);
+        cursor: pointer;
+        padding: 2rem;
+        position: relative;
+    }
+    .logoDiv{
+        margin: .5rem;
+    }
+   
+
+}
+/* CSS qui s'applique aux écrans de moins de 900 pixels de largeur */
+@media screen and (max-width: 899px) {
+    .header {
+        display: flex;
+        padding: 1.5rem;
+        align-items: center;
+        background-color: var(--couleur5);
+        justify-content: space-between;
+        width: 100%;
+        box-shadow: 0.2px 4px white;
+        border: solid black;
+        z-index: 1000;
+    }
+    .logo {
+        color: hsl(var(--hue-color), 60%, 60%);
+        cursor: pointer;
+        padding: 1rem;
+        position: relative;
+    }
+    .logoDiv {
+        margin: .5rem;
+    }
+    #mobile {
+        display: flex;
+        background-color: var(--couleur5);
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        align-items: flex-end;
+        height: auto;
+        top: 90px;
+        right: 0;
+        background-color: var(--couleur5);
+        padding: .5rem;
+    }
+}
+
+/* CSS qui s'applique aux écrans de 350 à 700 pixels de largeur */
+@media screen and (max-width: 700px) and (min-width: 350px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 1.5rem;
+        background-color: var(--couleur5);
+        position: fixed;
+        width: 100%;
+        border: solid black;
+        z-index: 1000;
+    }
+    .logo {
+        color: hsl(var(--hue-color), 60%, 60%);
+        cursor: pointer;
+        padding: 1rem;
+        position: relative;
+    }
+    .logoDiv {
+        margin: .5rem;
+    }
+    #mobile {
+        display: flex;
+        background-color: var(--couleur5);
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        align-items: flex-end;
+        height: auto;
+        top: 90px;
+        right: 0;
+        background-color: var(--couleur5);
+        padding: .5rem;
+    }
+}

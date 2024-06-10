@@ -1,0 +1,68 @@
+/* CSS commun à tous les écrans ---------------------*/
+.navList {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+.navItem {
+    position: relative;
+    cursor: pointer;
+}
+.navItem:hover {
+    border-radius: 1.5rem;
+    color: hsl(var(--hue-color), 60%, 33%);
+}
+
+.navLink {
+    text-decoration: none;
+    color:  var(--dark); 
+   
+}
+
+.navItem.active .navLink {
+    color: hsl(var(--hue-color), 60%, 33%); 
+}
+
+
+
+
+
+
+/* CSS qui s'applique aux écrans de plus de 900 pixels de largeur */
+@media screen and (min-width: 900px) {
+    .nav ul {
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+/* CSS qui s'applique aux écrans de moins de 900 pixels de largeur */
+@media screen and (max-width: 899px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .navLink {
+        font-size: 18px;
+        color: #000000;
+    }
+}
+
+/* CSS qui s'applique aux écrans de moins de 700 pixels de largeur */
+@media screen and (max-width: 700px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .navLink {
+        font-size: 16px;
+        color: #000000;
+    }
+}
