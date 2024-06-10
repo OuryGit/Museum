@@ -1,0 +1,234 @@
+
+
+.welcome {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; 
+  background-image: url('/museum-background.webp');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  padding-top:10rem; 
+  box-sizing: border-box;
+  padding-bottom: 3rem;
+}
+
+.welcome::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(3px); 
+  z-index: 1;
+}
+
+.welcome > * {
+  position: relative;
+  z-index: 2;
+}
+
+.textContainer {
+  background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour améliorer la lisibilité */
+  font-weight: bold;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 1100px; 
+  width: 90%; 
+  margin: 0 auto 1rem;
+  text-align: center;
+  color: white; 
+  font-size: 1.2rem;
+  line-height: 2.5;
+  margin-bottom: 5rem;
+}
+
+.imagesTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  
+}
+
+.imageTextBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.imageLeft, .imageRight {
+  width: 50%;
+  border-radius: 1rem;
+}
+
+.textRight, .textLeft {
+  width: 60%;
+  color: var(--dark);
+  background: rgba(167, 165, 165, 0.8);;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.textRight h2, .textLeft h2 {
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.textRight p, .textLeft p {
+  color: var(--dark);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.testimonials {
+  
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.testimonials h2 {
+  color:var(--dark);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.testimonialsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  width: 23%;
+  color: var(--dark);
+  background: rgba(255, 255, 255, 0.8); 
+  box-shadow: 0 10px 10px rgba(47, 47, 46, 0.1);
+  transition: transform 0.3s;
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: gold;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+
+/* Media Queries */
+
+/*Pour les écrans légèrement plus petits que les écrans de bureau larges*/
+@media screen and (max-width: 1200px) {
+  .textContainer {
+    font-size: 1.1rem;
+  }
+
+  .testimonial {
+    width: 45%;
+  }
+
+  .imageTextBlock {
+    flex-direction: column;
+  }
+
+  .imageLeft, .imageRight {
+    width: 100%;
+  }
+
+  .textRight, .textLeft {
+    width: 100%;
+  }
+
+  .textRight, .textLeft {
+    margin-top: 1rem;
+  }
+}
+/*Pour les écrans moyens comme les tablettes. */
+@media screen and (max-width: 900px) {
+  .textContainer {
+    font-size: 1rem;
+  }
+
+  .testimonial {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .testimonialsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageTextBlock {
+    flex-direction: column;
+  }
+
+  .imageLeft, .imageRight {
+    width: 100%;
+  }
+
+  .textRight, .textLeft {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+/*Pour les petits écrans comme les téléphones. */
+@media screen and (max-width: 600px) {
+  .textContainer {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .testimonial {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .testimonialsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageTextBlock {
+    flex-direction: column;
+  }
+
+  .imageLeft, .imageRight {
+    width: 100%;
+  }
+
+  .textRight, .textLeft {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

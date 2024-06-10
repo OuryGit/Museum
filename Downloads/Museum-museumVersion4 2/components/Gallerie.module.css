@@ -1,0 +1,46 @@
+.gallerie {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.imageContainer {
+    position: relative;
+    align-items: center;
+    width: 45%;
+    height: 200px;
+    margin: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border: solid black;
+    border-radius: 1rem;
+
+}
+.imageInfo {
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    font-size: small;
+    align-items: flex-start;
+    height: auto;
+}
+@media screen and (min-width: 350px) and  (max-width: 700px){
+    .imageContainer{
+        width: 95%;
+        background-color: rgb(51, 153, 78);
+        margin: 0.5rem;
+    } 
+    .gallerie{
+        flex-wrap: wrap;
+    }
+    .imageInfo {
+        width: 70%;
+        font-size: large;
+        font-weight: 600;
+    }
+}
+
+
