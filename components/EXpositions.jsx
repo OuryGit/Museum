@@ -19,14 +19,14 @@ export default function Expositions() {
                         <span className={styles.Bienvenue}>
                             BIENVENUE SUR NOS EXPOSITIONS ÉVÉNEMENTIELLES
                         </span>
-                        <h2 className=  {styles.expoTitle}>LA COLLECTION</h2>
+                        <h2 className=  {styles.expoTitle}>LA COLLECTION SPECIALE DE CE MOIS</h2>
                     </div>
                     <div className={styles.icons}>
-                        <h3 className='titleIcons'>ici se trouver les icons</h3>
+                        <h3 className='titleIcons'>ici se trouve les catégories</h3>
                         <ul className='listeIcons'>
-                            <li> icon 1</li>
-                            <li> icon 2</li>
-                            <li>icon 3</li>
+                            <li> Art</li>
+                            <li> Design</li>
+                            <li>Status</li>
                         </ul>
                     </div>
                 </div >
@@ -39,6 +39,7 @@ export default function Expositions() {
                     <Gallerie images={gallerieMusee} />
                     }
                 </div>
+                
                 <div className={styles.text}>
                     <p className={styles.mesParagraphes}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem perferendis recusandae explicabo officiis omnis distinctio? Fugiat vitae debitis officiis, placeat, delectus et saepe cum, molestiae dignissimos ipsum quibusdam provident esse!</p>
                   <div className={styles.expoContent}>
@@ -46,7 +47,7 @@ export default function Expositions() {
                         <span className='smallText'>
                             EXPOSITION ÉVÉNEMENTIELLE
                         </span>
-                        <h2 className=  {styles.expoTitle}>LA COLLECTION</h2>
+                        <h2 className={styles.expoTitle}>LA COLLECTION</h2>
                     </div>
                 </div >
                 <p className={styles.mesParagraphes}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem perferendis recusandae explicabo officiis omnis distinctio? Fugiat vitae debitis officiis, placeat, delectus et saepe cum, molestiae dignissimos ipsum quibusdam provident esse!</p>

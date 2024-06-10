@@ -6,7 +6,7 @@ export default function Gallerie({ images }) {
         <div className={styles.gallerie}>
         {images.map((image, index) => (
             <div key={index} className={styles.imageContainer}>
-                <Image src={image.src} alt={image.title}  
+                <Image src={image.src}  alt={image.title}  
                         layout="fill" 
                         className={styles.image}
                         objectFit="cover" 

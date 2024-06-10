@@ -128,10 +128,18 @@
   transition: transform 0.3s;
 }
 
-.testimonial:hover {
+.testimonial:hover{
   transform: scale(1.05);
-}
+  transition: transform 0.5s ease; 
 
+}
+.imageRight:hover,.imageLeft:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease; 
+}
+.imageRight, .imageLeft {
+  transition: transform 0.5s ease; /* ajouter la transition initiale */
+}
 .stars {
   font-size: 1.5rem;
   color: gold;

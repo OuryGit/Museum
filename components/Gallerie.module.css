@@ -12,10 +12,9 @@
     margin: 1.5rem;
     flex-wrap: wrap;
     padding: 2rem;
-    border: solid black;
-    border-radius: 1rem;
 
 }
+
 .imageInfo {
     padding: 8px;
     background-color: rgba(0, 0, 0, 0.7);
@@ -27,7 +26,25 @@
     align-items: flex-start;
     height: auto;
 }
-@media screen and (min-width: 350px) and  (max-width: 700px){
+.image:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease; 
+}
+.image{
+    transition: transform 0.5s ease; 
+  
+}
+@media screen and (max-width: 1200px){}
+
+@media screen and (max-width: 900px){
+    .imageContainer{
+        width: 95%;
+        background-color: rgb(51, 153, 78);
+        margin: 0.5rem;
+    } 
+}
+
+@media screen and (max-width: 600px){
     .imageContainer{
         width: 95%;
         background-color: rgb(51, 153, 78);
