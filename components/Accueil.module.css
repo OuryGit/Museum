@@ -1,12 +1,9 @@
-
-
 .welcome {
   position: relative;
   width: 100%;
   min-height: 100vh; 
-/*   background-image: url('/museum-background.webp');*/ 
- background-size: 100% 100%;
- background-color: rgb(251, 242, 231);
+  background-image: url('/museum-background.webp');
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;

@@ -1,7 +1,34 @@
 /* css commun a tous les ecrnas ---------------------*/
+.navList {
+    list-style: none;
+    gap: 2rem;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+.navItem {
+    position: relative;
+    cursor: pointer;
+}
+.navItem:hover {
+    border-radius: 1.5rem;
+    color: hsl(var(--hue-color), 60%, 33%);
+}
+
+.navLink {
+    text-decoration: none;
+    color:  var(--dark); 
+   
+}
+
+.navItem.active .navLink {
+    color: hsl(var(--hue-color), 60%, 33%); 
+}
+
 .btn{
     padding: .2rem .1rem 0rem .5rem;
-    background-color: rgba(0, 0, 0, 0) ;
+    background-color: rgba(132, 14, 14, 0) ;
     border-radius:3rem ;
     border: none;
     outline: none;
@@ -21,12 +48,11 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 4rem;
     list-style-type: none;
     margin: 0;
     padding: .5rem .2rem 0rem 1rem;
 } 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
      .nav ul {
         display: flex;
         align-items: center;
@@ -39,44 +65,51 @@
  
 }
 /* ------------------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 701px) and (max-width: 901px){
-    .nav ul{
-        display: flex;
-        background-color: aqua;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    
-}
-/* ------------------------------------------------------------------------------------------------------- */
-
-@media screen and (min-width: 350px) and  (max-width: 700px){
+@media screen  and (max-width: 900px){
     .navList{
         flex-direction: column;
         position: absolute;
         align-items: center;
+        width: 100%;
         height: 300px;
-        top: 65px;
+        top: 86px;
         margin: .5rem;
         padding: 2rem;
         border-radius: 1rem;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.745) ;
+        background-color: var(--couleur5);
+    }
+    .navList{
+        display: none;
+    }
+}
+/* ------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 600px){
+    .navList{
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        top: 86px;
+        margin: .5rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        right: 0;
+        background-color: var(--couleur5);
+    }
+    
+    .navList{
+        display: none;
     }
     .navItem{
         margin: 1.5rem;
     }
     .visiter{
-        font-size: medium;
         padding: .8rem 0.8rem;
         text-align: center;
-        color: aliceblue;
         width: 10px;
-    }
-    .navLink{
-        font-size: medium;
-        color: white;
     }
     
   

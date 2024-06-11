@@ -1,88 +1,76 @@
-.header {
-        display: flex;
-        align-items: center;
-        background-color: var(--couleur5);
-        background-color: var(--couleur5);
-        justify-content: space-between;
-        width: 100%;
-        z-index: 1000;
-       
-    }
-    .logoDiv{
-        margin: 0;
-    }
-    .logo {
-        color: hsl(var(--hue-color), 60%, 60%);
-        cursor: pointer;
-        position: relative;
-    }
-
 /* CSS qui s'applique aux écrans de plus de 900 pixels de largeur */
 @media screen and (min-width: 900px) {
     .header {
-        padding: 1.5rem;
+        padding: 0.5rem;
+        background-color: var(--couleur5);
         display: flex;
-        position: fixed;
-        box-shadow: 0.2px 4px white;
-        z-index: 1000;
-        font-size: medium;
-
-    }
-    .logo {
-        padding: 1.5rem;
-    }
-    #mobile{
-        display: none;
-       }
-  
-  
-
-}
-/* ------------------------------------------------------------------------------------------------------- */
-
-@media screen and (max-width: 901px){
-
-    
-    
-}
-/* ------------------------------------------------------------------------------------------------------- */
-@media screen and (min-width: 350px) and  (max-width: 700px){
-    .header {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: absolute;
-         padding: 1rem;
-        background: rgb(46, 115, 199);
         position: fixed;
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        box-shadow: 0.2px 4px white;
+
+        border: solid black;
         z-index: 1000;
-    } 
+    }
     #mobile{
-        flex-direction: flex;
+        display: none;
+       }
+    .logo {
+        color: hsl(var(--hue-color), 60%, 60%);
+        cursor: pointer;
+        padding: 2rem;
+        position: relative;
+    }
+    .logoDiv{
+        margin: .5rem;
+    }
+   
+
+}
+/* CSS pour les écrans de plus de 900 pixels de largeur */
+@media screen and (min-width: 900px) {
+    .header {
+        padding: 0.5rem;
+        justify-content: space-around;
+        position: fixed;
+    }
+    #mobile {
+        display: none;
+    }
+    .logo {
+        padding: 2rem;
+    }
+}
+
+/* CSS pour les écrans de moins de 900 pixels de largeur */
+@media screen and (max-width: 899px) {
+    .header {
+        padding: 1.5rem;
+        justify-content: space-between;
+        box-shadow: 0.2px 4px white;
+    }
+    #mobile {
         display: flex;
+        background-color: var(--couleur5);
+        flex-direction: column;
         align-items: center;
         position: absolute;
         align-items: flex-end;
         height: auto;
-        top: 84px;
-        background-color: aqua;
+        top: 90px;
         right: 0;
-        background: transparent;
-    }
-    .menuBar{
-        display: none;
-    }
-    #mobile .icon{
-        color: red;
-        width: 50px;
-        height: 30px;
+        padding: .5rem;
     }
 }
 
-
-    
+/* CSS pour les écrans de 350 à 700 pixels de largeur */
+@media screen and (max-width: 700px) and (min-width: 350px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    #mobile {
+        display: flex;
+    }
+}

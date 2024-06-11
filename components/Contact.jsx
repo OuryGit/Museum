@@ -1,5 +1,5 @@
-import styles from './connexion.module.css'
-export default function Connexion() {
+import styles from './Contact.module.css'
+export default function Contact() {
     return (
         <div className={styles.contactContainer}>
             <div className={styles.contactContent}>
