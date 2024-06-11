@@ -1,26 +1,39 @@
 .contactContainer {
+  position: relative;
   width: 100%;
+  height: auto; 
   background-image: url('/museum-background.webp');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start; 
+  padding: 7rem 2rem; 
   box-sizing: border-box;
 }
 
 .contactContent {
-  border-radius: 0.5rem;
-  padding: 10rem;
-  margin: 5rem;
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 4rem;
+  border-radius: 2rem;
   color: var(--light);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 4rem; 
 }
+
 .contactContent h1 {
+  margin-bottom: 1rem; 
   color: hsl(var(--hue-color), 80%, 50%);
 }
+
 .contactContent p {
   margin-bottom: 0.3rem; 
 }
+
 .contactForm {
   display: flex;
   flex-direction: column;
@@ -29,7 +42,7 @@
 
 .contactForm label {
   margin: 1rem 0 1rem;
-  font-weight: bold
+  font-weight: bold;
 }
 
 .contactForm input,
@@ -67,4 +80,56 @@
 
 .socialMedia a:hover {
   text-decoration: underline;
+}
+
+
+
+/* Responsivité pour les écrans plus petits */
+@media screen and (max-width: 900px) {
+  .contactContainer {
+    padding: 6rem 1rem; /* Réduire le padding pour les écrans plus petits */
+  }
+
+  .contactContent {
+    padding: 3rem; /* Réduire le padding interne pour les écrans plus petits */
+    margin-bottom: 3rem; /* Ajuster la marge en bas */
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    padding: 0.4rem; /* Réduire le padding des champs de formulaire */
+    font-size: 1rem; /* Ajuster la taille de la police */
+  }
+
+  .contactForm button {
+    padding: 0.6rem; /* Réduire le padding du bouton */
+    font-size: 1rem; /* Ajuster la taille de la police */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactContainer {
+    padding: 5rem 1rem; /* Réduire encore plus le padding pour les écrans très petits */
+  }
+
+  .contactContent {
+    padding: 2rem; /* Réduire le padding interne pour les très petits écrans */
+    margin-bottom: 2rem; /* Ajuster la marge en bas */
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    padding: 0.3rem; /* Réduire le padding des champs de formulaire */
+    font-size: 0.9rem; /* Ajuster la taille de la police */
+  }
+
+  .contactForm button {
+    padding: 0.5rem; /* Réduire le padding du bouton */
+    font-size: 0.9rem; /* Ajuster la taille de la police */
+  }
+
+  .socialMedia {
+    flex-direction: column; /* Aligner les icônes de réseaux sociaux en colonne */
+    gap: 0.5rem; /* Réduire l'espacement entre les icônes */
+  }
 }
