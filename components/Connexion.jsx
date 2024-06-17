@@ -1,10 +1,10 @@
-import styles  from './Connexion.module.css'
-
-export  default function Connexion(){
+import FormNonControlle from "./FormNonControlle"
+import styles from '@/components/Connexion.module.css'
+export default function Connexion() {
     return <>
-    <div className={styles.connexion}>
-       
+        <div  className={`${styles.connexion} `} >
+            Formulaire non contrôlé
+            <FormNonControlle/>
         </div>
-    </>
-
+    </>;
 }

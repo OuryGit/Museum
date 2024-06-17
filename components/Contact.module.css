@@ -85,7 +85,11 @@
 
 
 /* Responsivité pour les écrans plus petits */
-
+@media screen and (min-width: 1200px){
+.contactContainer{
+  margin-top: 2rem;
+}
+}
 @media screen and (max-width: 900px) {
   .contactContainer {
     padding: 6rem 1rem; /* Réduire le padding pour les écrans plus petits */
