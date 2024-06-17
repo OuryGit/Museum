@@ -1,48 +1,43 @@
+import React, { useState } from 'react';
 import styles from './Header.module.css';
 import MenuNav from './MenuNav';
-import React, {useState} from 'react';
 import { MdOutlineMuseum } from "react-icons/md";
 import { CiMenuBurger } from "react-icons/ci";
-import Image from 'next/image';
-import { IoCloseSharp } from "react-icons/io5";
 import { AiFillCloseCircle } from "react-icons/ai";
-export default function Header({setPage}) {
 
-    return <section className={styles.navBarSection}> 
-    <header className={`${styles.header} ${styles.flex}`}>
+export default function Header({ setPage }) {
+    // État pour contrôler quel icône est actuellement visible
+    const [isMenuVisible, setIsMenuVisible] = useState(true);
 
-        <div className={styles.logoDiv}>
-            <a href="#" className={`${styles.logo} ${styles.flex}`}>
-                <h1> <MdOutlineMuseum className={styles.icon} /> Art et Histoire. </h1>
-            </a>
-            
-        </div>
-        
-        <div className={styles.navBar}>
-                <MenuNav setPage={setPage} />
-        </div>
-        
-        <div id={styles.mobile}>
-            <div  className={styles.menuBar}>
-                <CiMenuBurger className={styles.icon} />
-            </div>
-            <div className={styles.closeBar} >
-                <AiFillCloseCircle className={styles.icon} />
-            </div>
-        </div>
-       
+    // Fonction pour basculer l'état de la visibilité des icônes
+    const toggleIcons = () => {
+        setIsMenuVisible(!isMenuVisible);
+    };
 
-            {/* <div className={styles.title}>  
-                <Image
-                    src={logo}
-                    alt="Logo React"
-                    width={40}
-                />
-                <h1>Art et Histoire</h1>
-            </div>
-            <MenuNav setPage={setPage} /> */}
-      
-        
-    </header>
-</section>
+    return (
+        <section className={styles.navBarSection}> 
+            <header className={`${styles.header} ${styles.flex}`}>
+                <div className={styles.logoDiv}>
+                    <a href="#" className={`${styles.logo} ${styles.flex}`}>
+                        <h1> <MdOutlineMuseum className={styles.icon} /> Art et Histoire. </h1>
+                    </a>
+                </div>
+                 <div className={styles.navBar} style={{ display: isMenuVisible ? 'block' : 'none' }}>
+                    <MenuNav setPage={setPage} />
+                </div> 
+                <div id={styles.mobile}>
+                    {/* Icône du menu */}
+                    <div className={styles.menuBar} onClick={toggleIcons} style={{ display: isMenuVisible ? 'none' : 'block' }}>
+                        <CiMenuBurger className={styles.icon} />
+                    </div>
+                    {/* Icône de fermeture */}
+                    <div className={styles.closeBar} onClick={toggleIcons} style={{ display: !isMenuVisible ? 'none' : 'block' }}>
+                        <AiFillCloseCircle className={styles.icon} />
+                     
+                    </div>
+                </div>
+            </header>
+        </section>
+    );
 }
+
