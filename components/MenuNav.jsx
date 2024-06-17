@@ -20,8 +20,8 @@ export default function MenuNav() {
                 <li className={`${styles.navItem} ${currentPath === '/contact' ? styles.active : ''}`} onClick={() => router.push('/contact')}>
                     <a className={styles.navLink}>Contact</a>
                 </li>
-                <li className={`${styles.navItem} ${currentPath === '/apropos' ? styles.active : ''}`} onClick={() => router.push('/apropos')}>
-                    <a className={styles.navLink}>À propos</a>
+                <li className={`${styles.navItem} ${currentPath === '/connexion' ? styles.active : ''}`} onClick={() => router.push('/connexion')}>
+                    <a className={styles.navLink}>Connexion</a>
                 </li>
            
         {/* <li className={styles.navItem}>
