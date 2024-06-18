@@ -30,7 +30,7 @@ export default function FormHook() {
                         className={styles.input}
                         {...register("nom", {
                             required: 'ce champ doit être rempli ',
-                            minLength: { value: 4, message: "min 4 caractères" }
+                            minLength: { value: 2, message: "min 4 caractères" }
                         })}
                         placeholder='votre nom'
                     />

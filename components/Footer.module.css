@@ -7,7 +7,12 @@
   align-items: center;
   color:var(--light);
 }
-
+.light{
+  background-color: rgb(18, 195, 244);
+}
+.dark{
+  background-color: var(--couleur5);
+}
 .footerContainer {
   display: flex;
   flex-direction: column;

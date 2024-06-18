@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     background-color: var(--couleur5);
-    background-color: var(--couleur5);
     justify-content: space-between;
     width: 100%;
     z-index: 1000;
@@ -16,7 +15,12 @@
     cursor: pointer;
     position: relative;
 }
-
+.light{
+    background-color: rgb(18, 195, 244);
+}
+.dark{
+    background-color: var(--couleur5);
+}
 
 /* CSS qui s'applique aux écrans de plus de 900 pixels de largeur */
 @media screen and (min-width: 1200px) {
