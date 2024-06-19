@@ -12,7 +12,7 @@ export default function Accueil() {
         <div className={styles.welcome}>
             <div className={styles.textContainer}>
                 
-                Mobilier, art de la table, design, papiers peints, objets d’art, verre... Les collections du musée Art et Histoire, parmi les plus importantes au monde, réunissent plus d’1 million et demi d’œuvres et artefacts du Moyen Âge à nos jours. Elles s’enrichissent chaque année de très nombreux dons, achats, et legs.
+                Mobilier, art de la table, designe, papiers peints, objets d’art, verre... Les collections du musée Art et Histoire, parmi les plus importantes au monde, réunissent plus d’1 million et demi d’œuvres et artefacts du Moyen Âge à nos jours. Elles s’enrichissent chaque année de très nombreux dons, achats, et legs.
                 Lieu d’inspiration et de transmission depuis sa création au XIXe siècle, le musée témoigne d’une recherche permanente d’harmonie entre le beau et l’utile.
             </div>
             <div className={styles.imagesTextContainer}>
