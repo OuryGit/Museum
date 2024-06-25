@@ -51,7 +51,6 @@ export default function Expositions() {
                 </div >
                 <p className={styles.mesParagraphes}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem perferendis recusandae explicabo officiis omnis distinctio? Fugiat vitae debitis officiis, placeat, delectus et saepe cum, molestiae dignissimos ipsum quibusdam provident esse!</p>
                 </div>
-              
             </section>
             
             

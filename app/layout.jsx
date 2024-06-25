@@ -1,4 +1,5 @@
 'use client'
+
 import Header from '@/components/Header'
 import { Inter } from "next/font/google";
 import Footer from '@/components/Footer';
@@ -8,10 +9,8 @@ import { ThemeProvider } from '@/components/ThemeProvider';
 import styles from './layout.module.css';
 const inter = Inter({ subsets: ["latin"] });
 
-/*export const metadata = {
-  title: "Art et Histoire",
-  
-};*/
+
+
 
 export default function RootLayout({ children }) {
   

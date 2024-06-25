@@ -30,7 +30,7 @@ export default function Contact() {
                     <a href="https://www.twitter.com" target="_blank" >Twitter</a>
                     <a href="https://www.instagram.com" target="_blank" >Instagram</a>
                 </div>
-                <p>Heures d'ouverture : Lundi - Vendredi, 9h - 18h</p>
+                <p>Heures ouverture : Lundi - Vendredi, 9h - 18h</p>
             </div>
         </div>
     );

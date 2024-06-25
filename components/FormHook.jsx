@@ -1,9 +1,10 @@
 'use client';
 import styles from './Form.module.css';
 import { useForm } from 'react-hook-form';
-import emailjs from "@emailjs/browser";
+//import emailjs from "@emailjs/browser";
 import { Great_Vibes } from 'next/font/google';
 import { useState } from 'react';
+import css from 'styled-jsx/css';
 
 export default function FormHook() {
     const {
@@ -24,7 +25,8 @@ export default function FormHook() {
     const [success, setSuccess] = useState(false);
 
     const sendmail = () =>{
-       const values = watch();
+        console.log("test")
+      const values = watch();
       
        const templateParams = {
          name: values.nom,
