@@ -5,11 +5,14 @@ import image1 from '@/public/Assests/image1.webp'
 import image2 from '@/public/Assests/image2.webp'
 import image3 from '@/public/Assests/image3.webp'
 import image4 from '@/public/Assests/image4.webp'
-
+import { useTheme } from './ThemeProvider';
 
 export default function Accueil() {
+    const [theme,setTheme]= useTheme();
     return (
-        <div className={styles.welcome}>
+        <div className={`${styles.welcome} ${styles.flex} ${styles.header +' '+
+            (theme === 'light'? styles.light : styles.dark)
+            }`}>
             <div className={styles.textContainer}>
                 
                 Mobilier, art de la table, designe, papiers peints, objets d’art, verre... Les collections du musée Art et Histoire, parmi les plus importantes au monde, réunissent plus d’1 million et demi d’œuvres et artefacts du Moyen Âge à nos jours. Elles s’enrichissent chaque année de très nombreux dons, achats, et legs.

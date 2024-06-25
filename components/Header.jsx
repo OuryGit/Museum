@@ -4,8 +4,9 @@ import MenuNav from './MenuNav';
 import { MdOutlineMuseum } from "react-icons/md";
 import { CiMenuBurger } from "react-icons/ci";
 import { AiFillCloseCircle } from "react-icons/ai";
-
+import { useTheme } from './ThemeProvider';
 export default function Header({ setPage }) {
+    const [theme,setTheme]= useTheme();
     // État pour contrôler quel icône est actuellement visible
     const [isMenuVisible, setIsMenuVisible] = useState(true);
 
@@ -16,7 +17,9 @@ export default function Header({ setPage }) {
 
     return (
         <section className={styles.navBarSection}> 
-            <header className={`${styles.header} ${styles.flex}`}>
+            <header className={`${styles.header} ${styles.flex} ${styles.header +' '+
+        (theme === 'light'? styles.light : styles.dark)
+        }`} >
                 <div className={styles.logoDiv}>
                     <a href="#" className={`${styles.logo} ${styles.flex}`}>
                         <h1> <MdOutlineMuseum className={styles.icon} /> Art et Histoire. </h1>

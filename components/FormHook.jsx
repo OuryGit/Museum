@@ -1,6 +1,9 @@
 'use client';
 import styles from './Form.module.css';
 import { useForm } from 'react-hook-form';
+import emailjs from "@emailjs/browser";
+import { Great_Vibes } from 'next/font/google';
+import { useState } from 'react';
 
 export default function FormHook() {
     const {
@@ -16,13 +19,40 @@ export default function FormHook() {
         }
     });
 
-    const onSubmit = data => { console.log(data);
+    
+    const [result, setResult] = useState('');
+    const [success, setSuccess] = useState(false);
+
+    const sendmail = () =>{
+       const values = watch();
+      
+       const templateParams = {
+         name: values.nom,
+         courriel: values.courriel,
+         message: values.message,
+       };
+
+       emailjs.send(
+           'service_y8k22il',// Service_ID
+           'template_kfdvfrj',//template_ID
+           templateParams,
+           'tjrjk-lt_uwWdPeAM'//USER PUBLIC KEY
+       ).then(
+            (response) =>{
+                setResult("message envoye avec succes");
+                setSuccess(true);       
+            },
+            (error) =>{
+                setResult("message non envoye ");
+                setSuccess(false);
+            }
+       );
        
     };
 
     return (
         <>
-            <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+            <form className={styles.form} onSubmit={handleSubmit(sendmail)}>
                 <label className={styles.label}>
                     Nom:
                     <input
@@ -30,7 +60,7 @@ export default function FormHook() {
                         className={styles.input}
                         {...register("nom", {
                             required: 'ce champ doit être rempli ',
-                            minLength: { value: 4, message: "min 4 caractères" }
+                            minLength: { value: 2, message: "min 4 caractères" }
                         })}
                         placeholder='votre nom'
                     />
@@ -67,4 +97,4 @@ export default function FormHook() {
             </form>
         </>
     );
-}
+  }

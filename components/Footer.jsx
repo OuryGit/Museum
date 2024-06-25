@@ -1,11 +1,15 @@
 import styles from './Footer.module.css'
 import React from 'react';
+import { useTheme } from './ThemeProvider';
 import { FaFacebookF, FaInstagram, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 export default function Footer() {
+  const [theme, setTheme]= useTheme();
   return (
-    <footer className={styles.footer}>
-      <div className={styles.footerContainer}>
+    <footer className={`${styles.footer} ${styles.header +' '+
+      (theme === 'light'? styles.light : styles.dark)
+      }`}>
+      <div className={'${styles.footerContainer}'}>
         <div className={styles.socialMedia}>
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
             <FaFacebookF />
