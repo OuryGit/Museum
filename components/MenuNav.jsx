@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import { useLocale } from './LocaleProvider';
 import styles1 from '@/components/Header.module.css'
 
+
 export default function MenuNav() {
     const handleTheme = () => {
         if (theme === 'light') {
@@ -46,7 +47,7 @@ export default function MenuNav() {
                 <li className={`${styles.navItem} ${currentPath === '/connexion' ? styles.active : ''}`} onClick={() => router.push('/connexion')}>
                     <a className={styles.navLink}><FormattedMessage id='app.header.menu.lien4'/></a>
                 </li>
-           
+                
         {/* <li className={styles.navItem}>
                     <Link className={styles.navLink} href="/">Accueil</Link>
             </li>

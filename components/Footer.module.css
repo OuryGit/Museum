@@ -5,13 +5,15 @@
   padding: 2rem;
   justify-content: center;
   align-items: center;
-  color:var(--light);
+  color:var(--dark);
+  font-weight: bold;
 }
 .light{
-  background-color: rgb(18, 195, 244);
+  background-color: rgb(255, 255, 255);
 }
 .dark{
-  background-color: var(--couleur5);
+  background-color:rgb(130, 130, 130)
+  ;
 }
 .footerContainer {
   display: flex;
@@ -22,14 +24,16 @@
 
 .socialMedia {
   margin-bottom: 1rem;
+
   
 }
 
 .socialIcon {
-  color: var(--first-color);
+  color: var(--dark);
   margin: 0 0.5rem;
   font-size: 1.5rem;
   text-decoration: none;
+  text-align: center;
   
 }
 

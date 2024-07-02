@@ -13,7 +13,7 @@
 }
 .navItem:hover {
     border-radius: 1.5rem;
-    color: hsl(var(--hue-color), 60%, 33%);
+    color: var(--light);
 }
 
 .navLink {
@@ -23,7 +23,7 @@
 }
 
 .navItem.active .navLink {
-    color: hsl(var(--hue-color), 60%, 33%); 
+    color: rgb(255, 234, 0); 
 }
 
 .btn{
@@ -73,7 +73,7 @@
         width: 100%;
         height: 300px auto;
         right: 000px;
-        background-color: var(--couleur5);
+        background-color:rgb(130, 130, 130);
     }
     .navItem{
         margin: 1.5rem;
@@ -89,7 +89,7 @@
         align-items: center;
         height: 300px;
         right:0;
-        background-color: var(--couleur5);
+        background-color:rgb(130, 130, 130);
         
     }
     

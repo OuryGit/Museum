@@ -11,15 +11,15 @@
     margin: 0;
 }
 .logo {
-    color: hsl(var(--hue-color), 60%, 60%);
+    color: BLACK;
     cursor: pointer;
     position: relative;
 }
 .light{
-    background-color: rgb(18, 195, 244);
+    background-color: rgb(255, 255, 255);
 }
 .dark{
-    background-color: var(--couleur5);
+    background-color:rgb(130, 130, 130)
 }
 
 /* CSS qui s'applique aux écrans de plus de 900 pixels de largeur */
@@ -35,6 +35,12 @@
 }
 .logo {
     padding: 1.5rem;
+}
+.light{
+    background-color: rgb(255, 255, 255);
+}
+.dark{
+    background-color:rgb(130, 130, 130)
 }
 #mobile{
     display: none;
@@ -80,6 +86,12 @@
 }
 .logo{
     font-size: x-large;
+}
+.light{
+    background-color: rgb(255, 255, 255);
+}
+.dark{
+    background-color:rgb(130, 130, 130);
 }
 
 
@@ -127,6 +139,12 @@
 }
 .logo{
     font-size: medium;
+}
+.light{
+    background-color: rgb(255, 255, 255);
+}
+.dark{
+    background-color:rgb(130, 130, 130)
 }
 
 }
