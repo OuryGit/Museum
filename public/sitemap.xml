@@ -7,19 +7,19 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://localhost:3000/Connexion</loc>
+        <loc>https://localhost:3000/connexion</loc>
         <lastmod>2024-05-08</lastmod>
         <changefreq>never</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://localhost:3000/Contact</loc>
+        <loc>https://localhost:3000/contact</loc>
         <lastmod>2024-05-08</lastmod>
         <changefreq>never</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://localhost:3000/Expositions</loc>
+        <loc>https://localhost:3000/expositions</loc>
         <lastmod>2024-05-08</lastmod>
         <changefreq>never</changefreq>
         <priority>0.7</priority>

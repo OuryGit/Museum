@@ -1,10 +1,10 @@
 import Expositions from "@/components/Expositions";
 export const metadata = {
-    title: 'Expositions | Site web présentant un musée de React et Next',
-    description: 'Page Expositions',
+    title: 'Expositions' ,
+    description: 'Cette page présente les différentes expositions du musée, mettant en valeur des projets et des œuvres réalisés avec React et Next.js.',
     openGraph: {
-        title: 'Connexion | Site web présentant un musée de React et Next',
-        description: 'Page expostions',
+        title: 'Expositions' ,
+        description: 'Cette page présente les différentes expositions du musée, mettant en valeur des projets et des œuvres réalisés avec React et Next.js.',
         images: ['./react.webp']
     }
 }

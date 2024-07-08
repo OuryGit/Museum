@@ -2,11 +2,11 @@ import Connexion from "@/components/Connexion";
 
 
 export const metadata = {
-    title: 'Connexion | Site web présentant un musée de React et Next',
-    description: 'Page de Connexion',
+    title: 'Connexion',
+    description: 'Cette page permet aux utilisateurs de se connecter pour accéder aux contenus exclusifs et aux fonctionnalités du musée de React et Next.js.',
     openGraph: {
-        title: 'Connexion | Site web présentant un musée de React et Next',
-        description: 'Page de Connexion',
+        title: 'Connexion',
+        description: 'Cette page permet aux utilisateurs de se connecter pour accéder aux contenus exclusifs et aux fonctionnalités du musée de React et Next.js.',
         images: ['./react.webp']
     }
 }

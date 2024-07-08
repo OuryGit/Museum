@@ -4,10 +4,10 @@ import Accueil from "@/components/Accueil";
 
 export const metadata = {
   title: 'Musée art et histoire| Accueil',
-  description: 'Site web présentant un musée de React et Next.js.',
+  description: 'Cette page offre une introduction au musée de React et Next.js. on peut trouver un descriptif détaillé du musée, parcourir des images captivantes, et lire les avis des visiteurs pour avoir un aperçu des expositions et des expériences proposées.',
   openGraph: {
     title: 'Musée art et histoire | Accueil',
-    description: 'Site web présentant un musée de React et Next.js.',
+    description: 'Cette page offre une introduction au musée de React et Next.js. on peut trouver un descriptif détaillé du musée, parcourir des images captivantes, et lire les avis des visiteurs pour avoir un aperçu des expositions et des expériences proposées.',
     images: ['./react.webp']
   }
 }

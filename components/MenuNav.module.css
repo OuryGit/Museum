@@ -23,7 +23,10 @@
 }
 
 .navItem.active .navLink {
-    color: rgb(255, 234, 0); 
+    border: 3px solid rgb(0, 0, 0); 
+    border-radius: 50%; 
+    padding: 7px; 
+    box-sizing: border-box;
 }
 
 .btn{
@@ -52,6 +55,21 @@
     margin: 0;
     padding: .5rem .2rem 0rem 1rem;
 } 
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-left: auto;
+    gap: 0.5rem;
+    margin-top: 0.5rem; 
+    position: relative;
+}
+
+.settings div {
+    cursor: pointer;
+    font-size: 1.5rem; /* Adjust icon size */
+}
 @media screen and (min-width: 1200px) {
      .nav ul {
         display: flex;

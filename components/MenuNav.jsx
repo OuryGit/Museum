@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPalette, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import styles from './MenuNav.module.css';
 import Link from 'next/link';
 import { FormattedMessage } from 'react-intl'
@@ -59,23 +61,15 @@ export default function MenuNav() {
             </li>*/}
 
         </ul>
-        <label>
-        <FormattedMessage id='app.header.theme'/>
-            <input
-                type="checkbox"
-                checked={theme === 'dark'}
-                onChange={handleTheme}
-            />
-        </label>
-        <div>
-            <label>
-                EN :
-                <input
-                    type="checkbox"
-                    checked={locale === 'en'}
-                    onChange={handleLocale} />
-            </label>
-        </div>
+
+        <div className={styles.settings}>
+        <div onClick={handleTheme}>
+                    <FontAwesomeIcon icon={faPalette} />
+                </div>
+                <div onClick={handleLocale}>
+                    <FontAwesomeIcon icon={faGlobe} />
+                </div>
+            </div>
     </nav>
     );
 }
